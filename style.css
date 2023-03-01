@@ -1,0 +1,430 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(255, 246, 233);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 98%;
+    margin: auto;
+}
+
+.row{
+    width: 100%;
+}
+
+.row::after{
+    clear: both;
+    content: '';
+    display: block;
+}
+
+[class*="col"]{
+    float: left;
+    padding: 15px;
+}
+
+[class*="col"]{
+    width: 100%;
+}
+
+/* _-----------------------------HEADER Starts----------------- */
+.header{
+    background-color: rgb(64, 52, 29);
+    padding: 0% 1%;
+    text-align: center;
+}
+
+.logo-img{
+    height: 70x;
+    width: 70px;
+}
+
+.logo-div img{
+    border: 3px solid rgb(255, 246, 233);
+    border-radius: 50%;
+    padding: 5px;
+}
+
+nav ul li{
+    display: block;
+}
+
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: wheat;
+    line-height: 70px;
+    padding: 0 20px;
+    font-size: 1rem;
+    /* font family */
+
+    transition: .3s;
+}
+
+nav ul li a:hover{
+    border-radius: 10px;
+    background-color: rgba(252, 127, 82, 0.648);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+/*------------------------------- HEADER ENds------------------ */
+
+/* -----------BANNER---------------------------- */
+#banner-section{
+    background-image: url("images/banner.jpg"); 
+    /* not showing yet */
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner-contents{
+    padding: 50px 10px;
+    text-align: center;
+}
+
+.banner-contents h1{
+    width: 100%;
+    margin: 15px auto;
+    font-size: 3rem;
+    background-color: rgba(255, 228, 196, 0.692);
+    border-radius: 5px;
+    padding: 10px;
+    /* font family */
+}
+
+.banner-contents p{
+    width: 300px;
+    margin: 15px auto;
+    background-color: rgb(252, 128, 82);
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+.btn{
+    width: 160px;
+    padding: 10px;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 246, 121, 0.718);
+    transition: .4s;
+}
+
+.btn:hover{
+    transform: scale(1.2);
+    border: 1px solid rgb(255, 246, 121);
+}
+/* -------------BANNER ends----------------------- */
+
+
+/* -----------------ABOUT starts------------------------------- */
+#about-us{
+    padding: 4%;
+}
+
+.abt-contents{
+    text-align: center;
+}
+
+.abt-contents h3{
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+
+.abt-contents p{
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+/* --------------------ABOUT ends------------------------------ */
+
+/* --------------------FOOD MENU starts------------------------------ */
+#veg-items{
+    padding: 1%;
+}
+
+.card{
+    text-align: center;
+    transition: 0.4s;
+    margin: auto 20px;
+}
+
+.card img{
+     max-width: 100%; /*img will take 100% of card */
+     height: auto;
+     display: block; /*it removes the gap between img and desc*/
+}
+
+.card-desc{
+    background-color: rgb(31, 60, 29);
+    color: wheat;
+}
+
+/* .item-name{
+    background-color: rgb(224, 151, 87);
+    color: rgb(60, 51, 29);
+    padding: 10px;
+    font-size: 1.4rem;
+} */
+
+.card-desc-veg{
+    background-color: rgb(73, 19, 78);
+    color: rgb(255, 170, 232);
+    padding: 20px;
+    font-size: 1.2rem;
+}
+
+.card-desc-greens{
+    background-color: rgb(84, 141, 47);
+    color: rgb(207, 251, 194);
+    padding: 20px;
+    font-size: 1.2rem;
+}
+
+.card-desc-grains{
+    background-color: rgb(66, 66, 57);
+    color: rgb(236, 236, 236);
+    padding: 20px;
+    font-size: 1.2rem;
+}
+
+.card-desc-spice{
+    background-color: rgb(196, 207, 113);
+    color: rgb(54, 27, 12);
+    padding: 20px;
+    font-size: 1.2rem;
+}
+
+/* .card p{
+    font-size: 1rem;
+    padding: 10px;
+    font-weight: bold;
+} */
+
+.card:hover{
+    transform: scale(1.1);
+}
+/* --------------------FOOD MENU ends------------------------------ */
+
+/* ---------------CONTACT starts------------------------------- */
+#contacts{
+    padding: 1%;
+    background-color: rgb(107, 91, 72);
+}
+
+.contact-details{
+    color: white;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.map{
+    width: 100%;
+    height: 250px;
+}
+
+.contact-details p, address{
+    font-size: 0.8rem;
+}
+/* ---------------CONTACT Endss------------------------------- */
+
+/* ---------------FOOTER Starts------------------------------- */
+.footer{
+    padding: 1%;
+    color: white;
+    background-color: black;
+}
+
+.footer p{
+    line-height: 32px;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.sns-menu{
+    text-align: center;
+}
+
+.sns-menu i{
+    color: wheat;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.5rem;
+    border: 1px solid wheat;
+    border-radius: 50%;
+    margin: 10px 20px;
+    transition: .4s;
+}
+
+.sns-menu i:hover{
+    background-color: rgba(245, 222, 179, 0.273);
+    transform: scale(1.5);
+}
+/* ---------------FOOTER Endss------------------------------- */
+
+
+/* Small screen 992px and up */
+@media (min-width: 576px) {
+    .col-sm-1{width: 8.33%;}
+    .col-sm-2{width: 16.66%;}
+    .col-sm-3{width: 25%;}
+    .col-sm-4{width: 33.33%;}
+    .col-sm-5{width: 41.66%;}
+    .col-sm-6{width: 50%;}
+    .col-sm-7{width: 58.33%;}
+    .col-sm-8{width: 66.66%;}
+    .col-sm-9{width: 75%;}
+    .col-sm-10{width: 83.33%;}
+    .col-sm-11{width: 91.66%;}
+    .col-sm-12{width: 100%;}
+}
+
+/* medium screen 992px and up */
+@media (min-width: 690px) {
+    .col-md-1{width: 8.33%;}
+    .col-md-2{width: 16.66%;}
+    .col-md-3{width: 25%;}
+    .col-md-4{width: 33.33%;}
+    .col-md-5{width: 41.66%;}
+    .col-md-6{width: 50%;}
+    .col-md-7{width: 58.33%;}
+    .col-md-8{width: 66.66%;}
+    .col-md-9{width: 75%;}
+    .col-md-10{width: 83.33%;}
+    .col-md-11{width: 91.66%;}
+    .col-md-12{width: 100%;}
+}
+
+/* Large screen 992px and up */
+@media (min-width: 992px) {
+
+.logo-div{
+    text-align: left;
+}
+
+.logo-img{
+    height: 150x;
+    width: 150px;
+}
+
+.logo-div img{
+    border: 8px solid rgb(255, 246, 233);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul{
+    text-align: right;
+}
+
+nav ul li a{
+    display: inline-block;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover{
+    background-color: transparent;
+    transform: scale(1.5);
+    text-decoration: underline;
+    border-radius: 0;
+}
+
+/* BANNER starts */
+#banner-section{
+    position: relative;
+    height: 100vh;
+}
+.banner-contents{ 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* this whole portion makes the contetnts in center */
+}
+.banner-contents h1{
+    width: 700px;
+    font-size: 5rem;
+}
+
+.banner-contents p{
+    width: 500px;
+    font-size: 2.5rem;
+}
+
+.btn{
+    width: 300px;
+    font-size: 2rem;
+    border-radius: 10px;
+}
+
+.btn:hover{
+    border-radius: 15px;
+}
+/* ----------------BANNER endss------------------------ */
+
+/* About starts */
+.abt-contents h3{
+    font-size: 2.2rem;
+}
+
+.abt-contents p{
+    font-size: 1.2rem;
+}
+
+.card:hover{
+    transform: scale(1.2);
+}
+
+/* ------------About Ends------------- */
+
+/* --icons--- */
+.sns-menu i{
+    color: wheat;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    margin: 0px 25px;
+    transition: .4s;
+    font-size: 1.8rem;
+}
+
+.footer p{
+    text-align: left;
+    font-size: 1rem;
+}
+
+/* .sns-menu i:hover{
+    background-color: rgb(30, 68, 55);
+    transform: scale(1.5);
+} */
+/* -------------------icons end--------------------------------- */
+
+    .col-lg-1{width: 8.33%;}
+    .col-lg-2{width: 16.66%;}
+    .col-lg-3{width: 25%;}
+    .col-lg-4{width: 33.33%;}
+    .col-lg-5{width: 41.66%;}
+    .col-lg-6{width: 50%;}
+    .col-lg-7{width: 58.33%;}
+    .col-lg-8{width: 66.66%;}
+    .col-lg-9{width: 75%;}
+    .col-lg-10{width: 83.33%;}
+    .col-lg-11{width: 91.66%;}
+    .col-lg-12{width: 100%;}
+}
